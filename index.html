@@ -1,9 +1,316 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
   <head>
     <title>Portfolio</title>
+    <meta chartset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="responsive.css"/>
+    <link rel="shortcut icon" sizes="48x48" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" sizes="48x48" type="image/x-icon" href="images/favicon.ico">
   <head>
   <body>
-    <h1>Portfolio</h1>  
+    <header>
+      <div class="title">
+        <h1 class="neonTitle">/Portfolio</h1>   
+        <h2 class="neonTitle titleCursor">_</h2>
+      </div>   
+
+      <div class="navbar">
+        <a class="navbarButton" href="#profilSection">
+          <i class="fa-regular fa-user fa-3x"></i>
+          <p class="profilText"></p>
+        </a>
+
+        <a class="navbarButton" href="#experiencesSection">
+          <i class="fa-solid fa-briefcase fa-3x"></i>
+          <p class="experiencesText"></p>
+        </a>
+
+        <a class="navbarButton" href="#educationSection">
+          <i class="fa-solid fa-graduation-cap fa-3x"></i>
+          <p class="educationText"></p>
+        </a>
+  
+        <a class="navbarButton" href="#projectsSection">
+          <i class="fa-solid fa-code fa-3x"></i>
+          <p class="projectsText"></p>
+        </a>
+
+        <a class="navbarButton" href="#skillsSection">
+          <i class="fa-regular fa-star fa-3x"></i>
+          <p class="skillsText"></p>
+        </a>
+  
+        <a class="navbarButton" onclick="changeLanguage()">
+          <i class="icon fa-solid fa-language fa-2x"></i>
+        </a>
+  
+        <a class="navbarButton" onclick="changeTheme()">
+          <i id="themeButtonIcon" class="icon fa-regular fa-moon fa-2x"></i>
+        </a>
+      </div> 
+
+      <a class="navbarMenuButton" onclick="menuToogle()">
+        <i id="navbarMenuButtonIcon" class="fa-solid fa-bars fa-2x"></i>
+      </a>
+      
+    </header>
+
+    <div id="container">
+      <div id="navbarMenu">
+        <div id="navbarMenuBody">
+          <a class="profilText navbarMenuLink" href="#profilSection"></a>
+          <a class="experiencesText navbarMenuLink" href="#experiencesSection"></a>
+          <a class="educationText navbarMenuLink" href="#educationSection"></a>
+          <a class="projectsText navbarMenuLink" href="#projectsSection"></a>
+          <a class="skillsText navbarMenuLink" href="#skillsSection"></a>
+          <a class="languageText navbarMenuLink" onclick="changeLanguage()"></a>
+          <a class="themeText navbarMenuLink" onclick="changeTheme()"></a>
+        </div>
+      </div>
+
+      <div id="frameScreen">
+        <div id="frameScreenContainer">
+          <img src="images/wave.jpg" class="slide"></img>
+          <img src="images/coffee.jpg" class="slide"></img>               
+          <div id="frameScreenText">         
+            <p id="frameScreenTitle">Nuno DUARTE DOS SANTOS</p>      
+            <div id="frameScreenJob">
+              <p id="frameScreenJobText"></p>
+              <p id="frameScreenTechno">.NET</p>
+            </div>
+          </div>      
+        </div>
+            
+      </div>  
+
+      <div id="profilSection" class="section">
+        <div class="frame">
+            <h2 class="profilText">Profil</h2>
+            <div id="profilContent">
+              <div id="photoProfil">
+                <div id="photoTooltip" onclick="rotatePhoto()"><p id="photoTooltipText"></p></div> 
+                <img id="photo" src="images/photo.jpg" onclick="rotateReversePhoto()"/>                
+                <div id="photoBase"></div>
+              </div> 
+              <div id="profilTextContent">
+                <p id="aboutMeText"></p>
+                <div>
+                  <p class="profilLabel">Age : </p>
+                  <p id="ageText"></p>
+                </div>
+                <div>  
+                  <p class="profilLabel">Phone number : </p>
+                  <p id="phoneNumberText">+336 69 12 80 60</p>
+                </div>
+                <div>  
+                  <p class="profilLabel">Mail Adress : </p>
+                  <p id="mailText">n.duartedos-santos@outlook.com</p>
+                </div>
+                <div>  
+                  <p class="profilLabel">Adress : </p>
+                  <p id="adressText">Wasquehal,Nord,France</p>
+                </div>
+                <div>  
+                  <p class="profilLabel">Driver Licence : </p>
+                  <p id="driverLicenceText"></p>
+                </div>
+              </div>           
+            </div>         
+        </div>     
+      </div>
+
+      <div id="experiencesSection" class="section">
+        <div class="frame">
+          <h2 class="experiencesText">Experiences</h2>
+          <div id="experiencesFrame">
+            <div id="experiencesWay">
+              <div class="experiencesCircle"></div>
+              <div class="experiencesLine"></div>
+              <div class="experiencesCircle"></div>
+              <div class="experiencesLine"></div>
+              <div class="experiencesCircle"></div>
+              <div class="experiencesLine"></div>
+            </div>
+            <div id="experiencesTextArea">
+              <div class="experiencesWayText">
+                <p id="autoiciExperienceLabel" class="experiencesLabel"></p>
+                <p id="autoiciExperienceText_1"></p>
+                <p id="autoiciExperienceText_2"></p>
+                <p id="autoiciExperienceText_3"></p>
+              </div>
+              <div class="experiencesWayText">
+                <p id="insy2sExperienceLabel" class="experiencesLabel"></p>
+                <p id="insy2sExperienceText_1"></p>
+                <p id="insy2sExperienceText_2"></p>
+                <p id="insy2sExperienceText_3"></p>
+                <p id="insy2sExperienceText_4"></p>
+              </div>
+              <div class="experiencesWayText">
+                <p id="rougegorgeExperienceLabel" class="experiencesLabel"></p>
+                <p id="rougegorgeExperienceText_1"></p>
+                <p id="rougegorgeExperienceText_2"></p>
+                <p id="rougegorgeExperienceText_3"></p>
+                <p id="rougegorgeExperienceText_4"></p>
+              </div>
+              
+            </div>
+          </div>
+        </div>     
+      </div>
+
+      <div id="educationSection" class="section">
+        <div class="frame">
+          <h2 class="educationText">Education</h2>
+          <div id="educationFrame">
+            <div id="educationWay">
+              <div class="educationCircle"></div>
+              <div class="educationLine"></div>
+              <div class="educationCircle"></div>
+              <div class="educationLine"></div>
+              <div class="educationCircle"></div>
+              <div class="educationLine"></div>
+              <div class="educationCircle"></div>
+              <div class="educationLine"></div>
+            </div>
+            <div id="educationTextArea">
+              <div class="educationWayText">
+                <p id="cesiEducationLabel" class="educationLabel"></p>
+                <p id="cesiEducationText"></p>
+              </div>
+              <div class="educationWayText">
+                <p id="afpaEducationLabel" class="educationLabel"></p>
+                <p id="afpaEducationText"></p>
+              </div>
+              <div class="educationWayText">
+                <p id="epsiEducationLabel" class="educationLabel"></p>
+                <p id="epsiEducationText"></p>
+              </div>
+              <div class="educationWayText">
+                <p id="btsEducationLabel" class="educationLabel"></p>
+                <p id="btsEducationText"></p>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </div>
+
+      <div id="projectsSection" class="section">
+        <div class="frame">
+          <h2 class="projectsText">Projects</h2>
+          <div id="projectsFrame">
+            <a class="projectLink" href="https://github.com/DuarteDosSantosNuno/portfolio.github.io">
+              <div class="project">
+                <img class="projectimage" src="images/projects/portfolio/p_1.png"/>
+                <div class="projectTextArea">
+                  <p id="pLabel" class="projectLabel"></p>
+                  <p id="pText" class="projectText"></p>
+                </div>
+              </div>
+            </a>
+            <a class="projectLink" href="https://github.com/DuarteDosSantosNuno/GestionDrive">
+              <div class="project">
+                <img class="projectimage" src="images/projects/forum/f_1.png"/>
+                <div class="projectTextArea">
+                  <p id="fLabel" class="projectLabel"></p>
+                  <p id="fText" class="projectText"></p>
+                </div>
+              </div>
+            </a>
+            <a class="projectLink" href="https://github.com/DuarteDosSantosNuno/projetfinal">
+              <div class="project">
+                <img class="projectimage" src="images/projects/drive_web_app/dwa_1.png"/>
+                <div class="projectTextArea">
+                  <p id="dwaLabel" class="projectLabel"></p>
+                  <p id="dwaText" class="projectText"></p>
+                </div>
+              </div>
+            </a>
+            <a class="projectLink" href="https://github.com/DuarteDosSantosNuno/Forum">
+              <div class="project">
+                <img class="projectimage" src="images/projects/animal_shelter_web_app/aswa_1.png"/>
+                <div class="projectTextArea">
+                  <p id="aswaLabel" class="projectLabel"></p>
+                  <p id="aswaText" class="projectText"></p>
+                </div>
+              </div>
+            </a>
+
+            <a class="projectLink" href="">
+              <div class="project">
+                <img class="projectimage" src="images/projects/bandchat/b_1.png"/>
+                <div class="projectTextArea">
+                  <p id="bLabel" class="projectLabel"></p>
+                  <p id="bText" class="projectText"></p>
+                </div>
+              </div>
+            </a>
+
+            <a class="projectLink" href="">
+              <div class="project">
+                <img class="projectimage" src="images/projects/connected_beehive/cb_1.png"/>
+                <div class="projectTextArea">
+                  <p id="cbLabel" class="projectLabel"></p>
+                  <p id="cbText" class="projectText"></p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>     
+      </div>
+
+      <div id="skillsSection" class="section">
+        <div class="frame">
+          <h2 class="skillsText">Skills</h2>
+          <div id="skillsFrame">
+            <img class="skillImage" src="images/skills/html.png">
+            <img class="skillImage" src="images/skills/css.png">
+            <img class="skillImage" src="images/skills/js.png">
+            <img class="skillImage" src="images/skills/nodejs.png">
+            <img class="skillImage" src="images/skills/jquery.png">
+            <img class="skillImage" src="images/skills/react.png">
+            <img class="skillImage" src="images/skills/angular.png">
+            <img class="skillImage" src="images/skills/vuejs.png">
+            <img class="skillImage" src="images/skills/bootstrap.png">
+            <img class="skillImage" src="images/skills/typescript.png">
+            <img class="skillImage" src="images/skills/php.png">
+            <img class="skillImage" src="images/skills/symfony.png">
+            <img class="skillImage" src="images/skills/java.png">
+            <img class="skillImage" src="images/skills/jee.png">
+            <img class="skillImage" src="images/skills/c.png">
+            <img class="skillImage" src="images/skills/c++.png">
+            <img class="skillImage" src="images/skills/csharp.png">
+            <img class="skillImage" src="images/skills/dotnet.png">
+            <img class="skillImage" src="images/skills/python.png">
+            <img class="skillImage" src="images/skills/json.png">
+            <img class="skillImage" src="images/skills/xml.png">
+            <img class="skillImage" src="images/skills/sql.png">
+            <img class="skillImage" src="images/skills/mysql.png">
+            <img class="skillImage" src="images/skills/postgresql.png">
+            <img class="skillImage" src="images/skills/oracle.png">
+            <img class="skillImage" src="images/skills/mongodb.png">
+            <img class="skillImage" src="images/skills/kotlin.png">
+            <img class="skillImage" src="images/skills/linux.png">
+            <img class="skillImage" src="images/skills/git.png">
+            <img class="skillImage" src="images/skills/github.png">
+            <img class="skillImage" src="images/skills/gitlab.png">
+            <img class="skillImage" src="images/skills/docker.png">
+          </div>
+        </div>      
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright &#169 2023</p>
+      <a href="https://www.linkedin.com/in/nuno-duarte-dos-santos/"><img class="footerImage" src="images/linkedin.png"/></a>
+      <a href="https://github.com/DuarteDosSantosNuno"><img class="footerImage" src="images/github.png"/></a>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/c5b33255ab.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="Toogle.js"></script>
+    <script src="Carousel.js"></script>
   </body>
+  
 </html>

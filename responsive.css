@@ -1,0 +1,150 @@
+/* Change navbar displaying */
+@media screen and (max-width: 730px) {
+    .navbar {
+      visibility: hidden;
+      display:none;
+    }
+
+    .navbarMenuButton{
+        visibility: visible;
+    }
+}
+
+/* Change margin top for navbar menu */
+@media screen and (max-width: 548px) {
+  #navbarMenuBody {
+    margin-top:0.3em;
+  }
+}
+
+/* Change screen text size */
+@media screen and (max-width: 1330px) {
+  #frameScreenTitle {
+    font-size: 56px;
+  }
+
+  #frameScreenJob {
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  #frameScreenTitle {
+    font-size: 40px;
+  }
+
+  #frameScreenJob {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #frameScreenTitle {
+    font-size: 28px;
+  }
+
+  #frameScreenJob {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #frameScreenTitle {
+    font-size: 20px;
+  }
+
+  #frameScreenJob {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #frameScreenTitle {
+    font-size: 16px;
+  }
+
+  #frameScreenJob {
+    font-size: 12px;
+  }
+}
+
+/* Change profil displaying */
+@media screen and (max-width: 600px) {
+  #profilContent {
+    display: block;
+  }
+
+  #profilTextContent {
+    margin-top:1em;
+    margin-left:0em;
+  }
+}
+
+/* Change text height from Education ans Expericences*/
+@media screen and (max-width: 500px) {
+  .educationLine {
+    height: 180px;
+  }
+
+  .experiencesLine{
+    height: 480px;
+  }
+
+  .educationWayText{
+    height: 210px;
+  }
+
+  .experiencesWayText{
+    height: 510px;
+  }
+}
+
+/* Change project width */
+@media screen and (max-width: 700px) {
+  .project{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project{
+    width: 100%;
+  }
+}
+
+/* Change displaying skills */
+@media screen and (max-width: 960px) {
+  #skillsFrame{
+    width: 726px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #skillsFrame{
+    width: 604px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #skillsFrame{
+    width: 483px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  #skillsFrame{
+    width: 362px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #skillsFrame{
+    width: 241px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #skillsFrame{
+    width: 120px;
+  }
+}

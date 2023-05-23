@@ -1,0 +1,483 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:black;
+    color:white;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;  
+    height:4.5em;
+    display: flex;
+    justify-content: end;
+    background:  #222;
+    z-index:10;
+    border-bottom: 2px solid cyan;
+    /* box-shadow: 0px 5px 20px 5px grey;   */
+}
+
+.title{
+    cursor:pointer;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1em;
+}
+
+.neonTitle {
+    color: cyan;
+    text-shadow: 0 0 7px cyan, 0 0 10px white, 0 0 21px white;
+    animation: titleFlicker 10s linear infinite;
+}
+
+.titleCursor{
+    margin-top: 25px;
+    margin-left: 5px;
+    animation: cursorFlicker 0.7s linear infinite alternate, titleFlicker 10s linear infinite;
+}
+
+.navbar{
+    position: absolute;
+    display:flex;   
+    visibility: visible;
+    margin-right: 1em;
+}
+
+.navbarButton{
+    cursor:pointer;
+    font-size: 11px;
+    text-align: center;
+    padding:10px;
+    /* margin-top: auto;
+    margin-bottom: auto;   */
+    height: 4.7em; 
+    color:cyan;
+    text-decoration: none;
+    /* vertical-align: middle; */
+    border-radius: 5px;
+}
+
+.icon{
+    margin-top: 0.7em;
+}
+
+.navbarButton:hover{
+    background-color:cyan;
+    color:rgb(0, 128, 128);
+    transition: background-color .3s, color .3s;
+}
+
+#navbarMenu{
+    height:4em;
+    background-color: black;
+    border-bottom: 2px solid cyan;    
+    padding: 4px;
+    text-align: center;
+    margin-bottom:2.5em;
+    position: sticky;
+    top:0em;
+    transition: margin-bottom 0.6s, top 0.6s;
+    z-index: 10;
+}
+
+#navbarMenuBody{
+    margin:1.2em;
+}
+
+.navbarMenuLink{
+    color:cyan;
+    font-size: 12px;
+    border: solid 1px cyan;
+    border-radius: 5px;
+    padding: .3em;
+    margin-top: .2em;
+    background-color: #444;
+    text-align: center;
+    display: inline-block;
+    vertical-align:bottom;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.navbarMenuLink:hover{
+    color:rgba(0, 128, 128, 1);
+    background-color: cyan;
+    transition: color .6s, background-color .6s;
+}
+
+.navbarMenuButton{
+    margin-right: 2em;
+    margin-left: auto;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+    font-size: 11px;
+    text-align: center;
+    padding:10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    visibility: hidden;
+    background-color: #444;
+}
+
+#container{
+    position:sticky;
+}
+
+#frameScreen{   
+    border-top: 2px solid cyan;
+    border-bottom: 2px solid cyan; 
+    background-color: #222;
+}
+
+#frameScreenContainer{ 
+    display: flex;
+    list-style: none;
+    overflow: hidden; 
+    scroll-behavior: smooth;
+    width:80%;
+    margin-left:10%;
+
+}
+
+.slide{
+    width: 100%;
+    height: auto;
+    filter: blur(4px);
+    background-color: black;
+    -webkit-mask-box-image: linear-gradient(to top, rgba(0,0,0, 0.8) 20%, rgba(0,0,0, 0.6) 40% );
+}
+
+#frameScreenText{
+    color:cyan;
+    padding: 2rem;
+    position: absolute;
+    margin-top: 5%;
+    font-weight: bold;
+    z-index:5;
+}
+
+#frameScreenTitle{
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0em;
+    line-height: 2em;
+}
+
+#frameScreenJob{
+    font-size: 52px;
+    display: flex;
+    line-height: .1em;
+}
+
+#frameScreenTechno{
+    margin-left:1em; 
+    color:#80F; 
+}
+
+.section{
+    margin-top: 5em;
+    margin-bottom: 5em;
+    background-color: #222;  
+    box-shadow: 0px 2px 8px 2px grey;
+}
+
+.frame{ 
+    color:#EEE;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    border-top: 2px solid cyan;
+    border-bottom: 2px solid cyan; 
+}
+
+#profilContent{
+    display:flex;
+}
+
+#photo{  
+    position: absolute;
+    width:150px;
+    transform: rotateY(-90deg) scale(1.2);
+    border-radius: 5px;
+}
+
+#photoTooltip{  
+    position: absolute;
+    width:152px;
+    height: 225px;
+    background-color: #444;
+    transform: rotateY(0deg) scale(1);
+    border-radius: 5px;
+}
+
+#photoTooltipText{
+    position:absolute;
+    top:38%;
+    text-align: center;
+    font-size: 12px;
+}
+
+#photoBase{    
+    width:145px;
+    height: 220px;
+    background-color: #666;
+    border: solid 3px #888;
+    border-radius: 5px;  
+    box-shadow: 3.5px 1px 1px 1px;
+}
+
+.photoRotation{
+    animation: photoRotation .6s forwards;
+}
+
+.photoTooltipRotation{
+    animation: photoTooltipRotation .6s forwards;
+}
+
+.photoRotationReverse{
+    animation: photoRotationReverse .6s forwards;
+}
+
+.photoTooltipRotationReverse{
+    animation: photoTooltipRotationReverse .6s forwards;
+}
+
+#profilTextContent{
+    border: solid 2px cyan;
+    border-radius: 5px;
+    margin-left:1em;
+    padding:1em;
+    box-shadow: 3.5px 1px 1px 1px cyan;
+}
+
+.profilLabel{
+    color:cyan;
+    font-weight: bold;
+    display:inline-flex;
+}
+
+#ageText, #phoneNumberText, #mailText, #adressText, #driverLicenceText{
+    display:inline;
+}
+
+#educationFrame, #experiencesFrame{
+    display: flex;
+}
+
+
+
+.educationCircle, .experiencesCircle{
+    width:20px;
+    height:20px;
+    border: solid 5px cyan;
+    border-radius: 100px;
+}
+
+.educationLine{
+    width:5px;
+    height:80px;
+    background-color: cyan;
+    margin-left:12.5px;
+}
+
+.experiencesLine{
+    width:5px;
+    height:280px;
+    background-color: cyan;
+    margin-left:12.5px;
+}
+
+#educationTextArea, #experiencesTextArea{
+    margin-top:2px;
+    margin-left: 3em;
+}
+
+.educationLabel, .experiencesLabel{
+    margin-top: 0px;
+    color:cyan;
+    font-weight: bold;
+}
+
+.educationWayText{
+    height:110px;
+}
+
+.experiencesWayText{
+    height:310px;
+
+}
+
+.projectLink{
+    text-decoration:none;
+    color:#EEE
+}
+
+.project{ 
+    width:60%;
+    margin-top:4em;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.project:hover{ 
+    transform: scale(1.02);
+    filter:brightness(1);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.project:not(:hover){ 
+    transform: scale(1);
+    filter:brightness(0.7);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.projectimage{
+    width:100%;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    box-shadow: 0px -4px 4px 4px grey;
+}
+
+.projectTextArea{
+    width:100%;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    margin-top: -1.5em;
+    padding-bottom: 1em;
+    box-shadow: 0px 4px 4px 4px grey;
+}
+
+.projectLabel{   
+    color:cyan;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 1em;
+    padding-left: 1em;   
+}
+
+.projectText{
+    margin-left: 1em;
+    margin-right: 1em;    
+}
+
+#skillsFrame{
+    width: 846px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.skillImage{
+    width:100px;
+    border-radius: 5px;
+    background-color: white;
+    margin:0.5em;
+
+}
+
+
+footer{
+    color:black;
+    width: 100%;
+    border-top: 2px solid cyan;
+    background-color: white;
+    box-shadow: inset 0 3px 6px 3px grey;
+    min-height: 100px;
+    padding-top:1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footerImage{
+    width: 50px;
+    margin: 1em;
+    border: solid 2px cyan;
+    border-radius: 10px;
+}
+
+
+@keyframes titleFlicker {
+    0%, 9%, 11%, 13%, 22%, 24%, 45%, 47%, 52%, 54%, 57%, 76%, 78%, 80%, 100% {
+        text-shadow:
+        0 0 7px cyan,
+        0 0 10px white,
+        0 0 21px white;
+    }
+    10%, 12%, 23%, 46%, 53%, 77%, 79% {       
+      text-shadow: none;
+    }
+}
+
+@keyframes cursorFlicker{
+    0%{
+        opacity: 1;
+    }
+    47%{
+        opacity: 1;
+    }
+    53%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes photoRotation{
+    0%{
+        transform: rotateY(-90deg) scale(1.4)
+    }
+    55%{
+        transform: rotateY(-90deg) scale(1.4)
+    }
+    100%{
+        transform: rotateY(0deg) scale(1)
+    }
+}
+
+@keyframes photoTooltipRotation{
+    0%{
+        transform: rotateY(0deg) scale(1)
+    }
+    45%{
+        transform: rotateY(90deg) scale(1.4)
+    }
+    100%{
+        transform: rotateY(90deg) scale(1.4)
+    }
+}
+
+@keyframes photoRotationReverse{
+    0%{
+        transform: rotateY(0deg) scale(1)
+    }
+    55%{
+        transform: rotateY(-90deg) scale(1.4)
+    }
+    100%{
+        transform: rotateY(-90deg) scale(1.4)
+    }
+}
+
+@keyframes photoTooltipRotationReverse{
+    0%{
+        transform: rotateY(90deg) scale(1.4)
+    }
+    45%{
+        transform: rotateY(90deg) scale(1.4)
+    }
+    100%{
+        transform: rotateY(0deg) scale(1)
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "en":
+    {
+        "profilText": "Profil",
+        "educationText": "Education",
+        "experiencesText": "Experiences",
+        "projectsText": "Projects",
+        "skillsText": "Skills",
+        "languageText": "Language",
+        "themeText": "Theme",
+
+        "frameScreenJobText":"Developper",
+
+        "photoTooltipText":"Click on me to see the photo.",
+        "aboutMeText": "Computing passionate student in first year of computing engineering degree at CESI, i’m seeking an apprenticeship for my engineering studies in order to gain more professional experience.",
+        "ageText":"23 years old",
+        "driverLicenceText":"Driver’s licence class D",
+        
+        "autoiciExperienceLabel":"October 2022 - January 2023 : Apprenticeship in Autoici as developper",
+        "autoiciExperienceText_1":"To develop new features for the ERP.",
+        "autoiciExperienceText_2":"Using Symfony 2, AngularJS and MySQL.",
+        "autoiciExperienceText_3":"Participation for the IT Infrastructure maintenance.",
+        "insy2sExperienceLabel":"January 2022 - February 2022 : Internship in INSY2S as React developper",
+        "insy2sExperienceText_1":"I've worked, with a team, on an online shopping web application project.",
+        "insy2sExperienceText_2":"The goal was to make purchases from a product catalog before validate and pay the order.",
+        "insy2sExperienceText_3":"The front-end is coded in React and the back-end in C#.",
+        "insy2sExperienceText_4":"I developed the company's interface for the stock and the order management.",
+        "rougegorgeExperienceLabel":"May 2019 - July 2019 : Internship in the RougeGorge's IT service",
+        "rougegorgeExperienceText_1":"My job was to optimize the company's network monitoring using the software PRTG.",
+        "rougegorgeExperienceText_2":"I had to create sensor templates to facilitate the monitoring of new devices on the network.",
+        "rougegorgeExperienceText_3":"Create custom notifications for different issues.",
+        "rougegorgeExperienceText_4":"Document the use of PRTG and the work realized.",
+
+        "cesiEducationLabel":"October 2022 - Today",
+        "cesiEducationText":"First year in computing engineering cycle, CESI, Reims.",
+        "afpaEducationLabel":"September 2021 - February 2022",
+        "afpaEducationText":"MS application development training, AFPA, Roubaix.",
+        "epsiEducationLabel":"November 2020 - April 2021",
+        "epsiEducationText":"(Level no finished) Bachelor of computing degree route DevOps, EPSI, Lille.",
+        "btsEducationLabel":"September 2018 - July 2020",
+        "btsEducationText":"HND digitals systems, Colbert High School, Tourcoing.",
+
+        "pLabel":"Portfolio",
+        "pText":"Web site for present me and my projects. It is coded with Javascript, Jquery and JSON.",
+        "fLabel":"Forum",
+        "fText":"It's a forum web site where you can create an account, topics and write answers in topics. It is coded with JEE, Bootstrap and MongoDB.",
+        "dwaLabel":"Drive Web App",
+        "dwaText":"Project developed with a team for realize an online shopping web application. The goal was to make purchases from a product catalog before validate and pay the order. the front-end is coded in React and the back-end in C#. I developed the company's interface for the stock and the order management.",
+        "aswaLabel":"Animal shelter Web App",
+        "aswaText":"A web app for an animal protection association, realized in teleworking, coded with ASP.NET, JQuery and Bootstrap, for the purpose to adopt an animal received in the shelter.",
+        "bLabel":"Bandchat",
+        "bText":"A chat app, realized in teleworking, coding with c# Windform in the purpose to send and receive message.",
+        "cbLabel":"Connected Beehive",
+        "cbText":"A web app, with JS and PHP, like an interface for the monitoring of a connected beehive."
+        
+    },
+
+    "fr":
+    {
+        "profilText": "Profil",
+        "educationText": "Éducation",
+        "experiencesText": "Expériences",
+        "projectsText": "Projets",
+        "skillsText": "Compétences",
+        "languageText": "Langue",
+        "themeText": "Thème",
+
+        "frameScreenJobText":"Développeur",
+        
+        "photoTooltipText":"Cliquez sur moi pour voir la photo.",
+        "aboutMeText": "Étudiant passionné d’informatique, en première année de diplôme d’ingénieur à CESI, je suis à la recherche d’une alternance pour mes études d’ingénieur afin d’acquérir davantage d’expérience professionnelle.",
+        "ageText":"23 ans",
+        "driverLicenceText": "Permis B",
+
+        "autoiciExperienceLabel":"Octobre 2022 - Janvier 2023 : Alternance chez Autoici au poste développeur",
+        "autoiciExperienceText_1":"Développer de nouvelles fonctionnalités sur l'application métier.",
+        "autoiciExperienceText_2":"Utilisation de Symfony 2, AngularJS et MySQL.",
+        "autoiciExperienceText_3":"Participation à la maintenance du parc informatique.",
+        "insy2sExperienceLabel":"Janvier 2022 - Février 2022 : Stage en entreprise chez INSY2S au poste de developpeur React",
+        "insy2sExperienceText_1":"Travail en équipe sur un projet d’application web de Drive.",
+        "insy2sExperienceText_2":"Le but était de faire des achats depuis le catalogue de produits avant de valider et payer la commande.",
+        "insy2sExperienceText_3":"Front-end codé en React et le back-end en C#.",
+        "insy2sExperienceText_4":"je devais développer l’interface de l’entreprise pour la gestion des stocks et des commandes.",
+        "rougegorgeExperienceLabel":"Mai 2019 - Juillet 2019 : Stage en entreprise dans le service informatique de l'entreprise RougeGorge",
+        "rougegorgeExperienceText_1":"Optimiser la supervision du réseau de l’entreprise avec le logiciel PRTG.",
+        "rougegorgeExperienceText_2":"Développer des modèles de capteurs pour faciliter la mise en supervision de nouveaux appareils.",
+        "rougegorgeExperienceText_3":"Créer des notifications personnalisées pour différents problèmes.",
+        "rougegorgeExperienceText_4":"Documenter l’utilisation de PRTG ainsi que le travail réalisé.",
+
+        "cesiEducationLabel":"Octobre 2022 - Aujourd'hui",
+        "cesiEducationText":"Première année cycle ingénieur informatique, CESI, Reims.",
+        "afpaEducationLabel":"Septembre 2021 - Février 2022",
+        "afpaEducationText":"Formation MS développement d’application, AFPA, Roubaix.",
+        "epsiEducationLabel":"Novembre  2020 - Avril 2021",
+        "epsiEducationText":"Formation non terminée Bachelor informatique DevOps, EPSI, Lille.",
+        "btsEducationLabel":"Septembre 2018-Juillet 2020",
+        "btsEducationText":"Formation BTS systèmes numériques, Lycée Colbert, Tourcoing.",
+
+        "pLabel":"Portfolio",
+        "pText":"Site web pour présenter moi et mes projets. Il est codé avec Javascript, JQuery et JSON.",
+        "fLabel":"Forum",
+        "fText":"C'est un site web forum où vous pouvez créer un compte, topics and écrire des réponses dans les topics. Il est codé avec JEE, Bootstrap et MongoDB.",
+        "dwaLabel":"Application web de drive",
+        "dwaText":"Travail en équipe sur un projet d’application web de drive (courses en ligne). Front-end codé en React et le back-end en C#. Développer l’interface de l’entreprise pour la gestion des stocks et des commandes.",
+        "aswaLabel":"Application web de refuge animalier",
+        "aswaText":"Une application web destinée à une association de protection animal, réalisée en télétravail, codée avec ASP.NET, JQuery et Bootstrap, permettant d’adopter un animal recueilli par le refuge.",
+        "bLabel":"Bandchat",
+        "bText":"Une application de chat, réalisée en télétravail, codée avec C# winform permettant d’envoyer et recevoir des messages.",
+        "cbLabel":"Ruche connectée",
+        "cbText":"Une application web, avec JS et PHP, servant d’interface à la supervision d’une ruche connectée."
+    }
+}
